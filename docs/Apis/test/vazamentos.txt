@@ -1,0 +1,101 @@
+async function verificarSite() {
+    const url = document.getElementById("urlSite").value.trim();
+    const resultado = document.getElementById("resultadoSite");
+
+    if (!url) {
+        resultado.innerHTML = "⚠️ Digite um endereço de site.";
+        return;
+    }
+
+    resultado.innerHTML = "🔎 Verificando...";
+
+    try {
+        const resposta = await fetch(
+            `https://fightphishing.com/api/check-url?url=${encodeURIComponent(url)}`
+        );
+
+        if (!resposta.ok) {
+            throw new Error(`Erro HTTP: ${resposta.status}`);
+        }
+
+        const dados = await resposta.json();
+
+        console.log("Resposta da API:", dados);
+
+        if (dados.status === "found") {
+
+            resultado.innerHTML = `
+                <h3>🚨 Cuidado!</h3>
+
+                <p>
+                    Esse endereço foi identificado como
+                    <strong>phishing</strong>.
+                </p>
+            `;
+
+        } else if (dados.status === "suspicious") {
+
+            resultado.innerHTML = `
+                <h3>⚠️ Atenção!</h3>
+
+                <p>
+                    Esse endereço foi considerado
+                    <strong>suspeito</strong>.
+                </p>
+            `;
+
+        } else if (dados.status === "not_found") {
+
+            resultado.innerHTML = `
+                <h3>✅ Nenhum alerta encontrado</h3>
+
+                <p>
+                    Esse endereço não foi encontrado
+                    na base de phishing consultada.
+                </p>
+
+                <small>
+                    Isso não significa que o site seja necessariamente seguro.
+                </small>
+            `;
+
+        } else if (dados.status === "shared_infrastructure") {
+
+            resultado.innerHTML = `
+                <h3>🟡 Atenção</h3>
+
+                <p>
+                    Esse domínio pertence a uma plataforma que pode ser utilizada
+                    por sites legítimos e também por golpes.
+                </p>
+            `;
+
+        } else {
+
+            resultado.innerHTML = `
+                <h3>❓ Resultado desconhecido</h3>
+
+                <p>
+                    A API retornou um resultado que ainda não foi tratado pelo site.
+                </p>
+            `;
+        }
+
+    } catch (erro) {
+
+        console.error("Erro na consulta:", erro);
+
+        resultado.innerHTML = `
+            <h3>❌ Não foi possível consultar</h3>
+
+            <p>
+                O servidor de consulta não respondeu.
+            </p>
+
+            <small>
+                Tente novamente mais tarde.
+            </small>
+        `;
+    }
+}
+
