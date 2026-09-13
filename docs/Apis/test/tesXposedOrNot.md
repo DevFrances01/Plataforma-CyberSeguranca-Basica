@@ -7,6 +7,8 @@ Durante os testes realizados, a API apresentou **duas interrupções de funciona
 | 1ª         |   14:20 | API indisponível |
 | 2ª         |   16:30 | API indisponível |
 
+<img src="/src/img/logo/logoMARK.gif" alt="">
+
 ### Motivo
 
 **Motivo desconhecido até o momento.**
