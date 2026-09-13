@@ -1,6 +1,6 @@
 # 🛡️ Plataforma de Cibersegurança Básica
 
-<img src="src/img/logo/logosite.png" alt="Logo da Plataforma de Cibersegurança">
+<img src="src/img/logo/logoMARK.jpg" alt="Logo da Plataforma de Cibersegurança">
 
 > Plataforma educativa desenvolvida para apresentar conceitos fundamentais de **cibersegurança** de forma simples, prática e acessível.
 
