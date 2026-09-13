@@ -1,9 +1,7 @@
 # 🛡️ Plataforma de Cibersegurança Básica
 
 
-Site educativo desenvolvido com o objetivo de apresentar conceitos básicos de **Cibersegurança** de forma simples, prática e acessível.
-
-O projeto utiliza explicações, exemplos do dia a dia e atividades práticas para ajudar os usuários a compreenderem os principais riscos digitais e aprenderem medidas básicas de proteção.
+Site educativo desenvolvido com o objetivo de apresentar conceitos básicos de **Cibersegurança** de forma simples, prática e acessível. O projeto utiliza explicações, exemplos do dia a dia e atividades práticas para ajudar os usuários a compreenderem os principais riscos digitais e aprenderem medidas básicas de proteção.
 
 ---
 
