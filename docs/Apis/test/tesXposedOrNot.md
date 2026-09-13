@@ -1,3 +1,5 @@
+
+
 # Atualização da API XposedOrNot
 
 Durante os testes realizados, a API apresentou **duas interrupções de funcionamento**.
@@ -7,7 +9,6 @@ Durante os testes realizados, a API apresentou **duas interrupções de funciona
 | 1ª         |   14:20 | API indisponível |
 | 2ª         |   16:30 | API indisponível |
 
-<img src="/src/gif/erro.gif" alt="">
 
 ### Motivo
 
@@ -19,4 +20,4 @@ Ainda estão sendo realizados testes para identificar a causa das interrupções
 
 > ⚠️ **Instabilidade identificada durante os testes.**
 
-<img src="/src/img/logo/logoMARK.jpg" alt="">
+<img src="/src/gif/erro.gif" alt="">
