@@ -10,6 +10,14 @@ Durante os testes realizados, a API apresentou **duas interrupções de funciona
 | 2ª         |   16:30 | API indisponível |
 
 
+## XposedOrNot
+
+### API
+https://api.xposedornot.com
+### Documentação oficial
+
+https://xposedornot.com/api_doc
+
 ### Motivo
 
 **Motivo desconhecido até o momento.**
