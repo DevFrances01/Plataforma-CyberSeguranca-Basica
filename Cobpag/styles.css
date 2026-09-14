@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+    color: white;
+    background:
+    radial-gradient(
+    circle at 80% 20%,
+    rgba(34, 211, 238, 0.18),
+    transparent 28%
+    ),
+    radial-gradient(
+    circle at 15% 85%,
+    rgba(37, 99, 235, 0.20),
+    transparent 30%
+    ),
+    linear-gradient(
+    135deg,
+    #020617 0%,
+    #0f172a 45%,
+    #082f49 100%
+    );
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center
+}
+span {
+    color: aqua;
+}
+p {
+    font-size: 18px;
+    text-align: center;
+    color: rgb(142, 210, 212);
+}
+
+img {
+    width: 90px;
+}
+.perfil-container{
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+.per{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #22d3ee;
+}
+.colaborador-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: left;
+    background-color: #020617;
+    border: solid 1px #0c728046;
+    border-radius: 10px;
+    padding: 24px;
+}
+.colaborador-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.colaborador-nome {
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.colaborador-descricao {
+    font-size: 13px;
+    text-align: left;
+    color: rgb(142, 210, 212);
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+.colaborador-links {
+    display: flex;
+    gap: 10px;
+}
+.colaborador-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #0c728075;
+    color: rgb(142, 210, 212);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.colaborador-links a:hover {
+    border-color: aqua;
+    color: aqua;
+}
+
+@media (max-width: 900px) {
+    .perfil-container {
+        grid-template-columns: 1fr;
+    }
+}
